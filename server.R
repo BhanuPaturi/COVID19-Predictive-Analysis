@@ -6,7 +6,7 @@ server <- function(input, output) {
   })
   
   getData <- reactive({
-    covidData <- read.csv("Ass2Data.csv",
+    covidData <- read.csv("RawData.csv",
                           header = TRUE,
                           na.strings = c("--","-99","NA"),
                           stringsAsFactors = TRUE)
